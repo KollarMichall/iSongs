@@ -1,0 +1,18 @@
+input {
+    margin: 1em;
+    border-radius: 5em;
+	outline: none;
+	padding-left: 2.2em;
+
+
+    background: {
+        image: url('/assets/search.svg');
+		repeat: no-repeat;
+		position-y: 50%;
+		position-x: 1em;
+		color: white;
+		size: 1em;
+	}
+
+
+}

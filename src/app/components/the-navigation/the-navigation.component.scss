@@ -1,0 +1,25 @@
+a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 1em;
+    &.active {
+			color: #cbf766;
+		}
+
+}
+a:first-child{
+    margin-left: 0;
+}
+nav{
+    margin: 2em auto 2.5em;
+    padding: 0 1.25em;
+    display: inline-block;
+    border: 5px solid rgb(171, 198, 216);
+    border-radius: 2.1em;
+    cursor: pointer;
+	padding: 0.575em 0.65em;
+
+}
+

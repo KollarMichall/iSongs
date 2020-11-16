@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+
+
+@import "./assets/scss/variables";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+	min-height: 100vh;
+	
+}
+body{
+    font-family: 'Goldman', cursive;
+    padding: 0 1.75em;
+    background-color: $color;
+}
+#app{
+    margin: 2em;
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+
+}
+header {
+	border-bottom: 3px solid #101010;
+	margin-bottom: 1em;
+}
+article {
+	text-align: left;
+}
+
+
+
+
+

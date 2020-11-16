@@ -1,0 +1,13 @@
+<article [@songAnim] class="tunes-song">
+   <div class="inside">
+       <h2>{{ song | songify | shorten:50 }}</h2>
+       <div class="player">
+           <img v-if="song.artwork" [src]="song.artwork" alt="album art">
+           <audio controls [src]="song.audioFile"></audio>
+
+       </div>
+   </div>
+   <footer class="meta">
+       {{ song.album | shorten:50 }}
+   </footer>
+</article>
