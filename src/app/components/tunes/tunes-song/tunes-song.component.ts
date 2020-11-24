@@ -13,11 +13,11 @@ import { Song } from '@app/types';
           opacity: 0,
           transform: 'scale(0.85)'
         }),
-        animate('0.2s ease')
+        animate('0.25s ease')
       ]),
       transition(':leave', [
         animate(
-          '0.2s ease',
+          '0.25s ease',
           style({
             opacity: 0,
             transform: 'scale(0.85)'

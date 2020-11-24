@@ -14,7 +14,9 @@ export class SongService {
     if (query) {
     this.iTunes.getData(query).subscribe(
       (data: any)=>{
-       this.songs = data.results.filter((song: any) => song.kind == 'song').map((song:any) => this.extractData(song))
+        console.log(data);
+        
+       this.songs = data.results.filter((song: any) => song.kind == 'music-video').map((song:any) => this.extractData(song))
        this.newSongsHaveArrived.emit(this.songs)
       },
       (error: any)=>{
@@ -30,13 +32,13 @@ export class SongService {
     trakId: id,
     trackName: title,
     artistName: artist,
-    previewUrl: audioFile,
+    previewUrl: videoFile,
     artworkUrl100: artwork,
     collectionName: album
 
 
   }) {
-    return{id, title, artist, audioFile, album, artwork}
+    return{id, title, artist, videoFile, album, artwork}
 
   }
 

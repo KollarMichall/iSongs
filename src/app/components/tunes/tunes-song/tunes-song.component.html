@@ -3,7 +3,7 @@
        <h2>{{ song | songify | shorten:50 }}</h2>
        <div class="player">
            <img v-if="song.artwork" [src]="song.artwork" alt="album art">
-           <audio controls [src]="song.audioFile"></audio>
+           <video controls [src]="song.videoFile"></video>
 
        </div>
    </div>
